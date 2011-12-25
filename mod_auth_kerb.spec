@@ -26,7 +26,7 @@ authentication based on ticket exchanges.
 %patch2 -p1 -b .fixes
 
 %build
-%configure --without-krb4 --with-krb5=/usr/kerberos \
+%configure --without-krb4 --with-krb5=/usr \
         --with-apache=%{_prefix}
 make %{?_smp_mflags} 
 
